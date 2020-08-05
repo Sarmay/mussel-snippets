@@ -13,16 +13,8 @@
     "contributes": {
       "snippets": [
         {
-          "language": "javascript",
-          "path": "./snippets/snippets.json"
-        },
-        {
           "language": "html",
-          "path": "./snippets/snippets.json"
-        },
-        {
-          "language": "typescript",
-          "path": "./snippets/snippets.json"
+          "path": "./snippets/snippets.code-snippets"
         },
         {
           "language": "vue",
@@ -30,7 +22,7 @@
         },
         {
           "language": "vue-html",
-          "path": "./snippets/snippets.json"
+          "path": "./snippets/snippets.code-snippets"
         }
       ]
     },

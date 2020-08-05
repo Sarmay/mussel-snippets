@@ -1,9 +1,7 @@
-# Change Log
+# 更新日志
+ 
+ 插件更新日志
 
-All notable changes to the "mussel" extension will be documented in this file.
+## [2020-08-05：更新]
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+- 添加mu方法

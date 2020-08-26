@@ -190,6 +190,222 @@
     ],
     "description": "mc左右布局"
   },
+  "mu-v-box": {
+    "prefix": "mu-v-box",
+    "body": [
+      "  <mu-v-box",
+      "   class='mu-absolute-fit'",
+      "   size='1'",
+      "   content-spacing>",
+      "</mu-v-box>"
+    ],
+    "description": "mu-v-box"
+  },
+  "mu-h-box": {
+    "prefix": "mu-h-box",
+    "body": [
+      "  <mu-h-box",
+      "   class='mu-absolute-fit'",
+      "   size='1'",
+      "   content-spacing>",
+      "</mu-h-box>"
+    ],
+    "description": "mu-h-box"
+  },
+  "mu-bar": {
+    "prefix": "mu-bar",
+    "body": [
+      "  <mu-bar",
+      "   class='pad-tb-8 pad-lr-16'",
+      "   border-bottom>",
+      "$1",
+      "</mu-bar>"
+    ],
+    "description": "mu-bar"
+  },
+  "mu-space": {
+    "prefix": "mu-space",
+    "body": [
+      "    <mu-space />"
+    ],
+    "description": "mu-space 空间"
+  },
+  "mu-btn-primary": {
+    "prefix": "mu-btn-primary",
+    "body": [
+      "<mu-button",
+      "   button-type='primary'",
+      "   :disabled='true'",
+      "   caption='按钮'",
+      "   @click='btnHandel'/>"
+    ],
+    "description": "mu-btn-primary"
+  },
+  "mu-btn-danger": {
+    "prefix": "mu-btn-danger",
+    "body": [
+      "<mu-button",
+      "   button-type='danger'",
+      "   :disabled='true'",
+      "   @click='btnHandel'>",
+      "<mu-icon icon-class='ipm-icon-trash-can' />",
+      "</mu-button>"
+    ],
+    "description": "mu-btn-danger 删除按钮"
+  },
+  "mu-btn-outline": {
+    "prefix": "mu-btn-outline",
+    "body": [
+      "<mu-button",
+      "   button-style='outline'",
+      "   button-type='normal'",
+      "   :disabled='true'",
+      "   caption='按钮'",
+      "   @click='btnHandel'/>"
+    ],
+    "description": "mu-btn-outline"
+  },
+
+  "cmp-single-selection": {
+    "prefix": "cmp-single-selection",
+    "body": [
+      "<cmp-single-selection",
+      "   v-model=''",
+      "   select-type='square'",
+      "   label='显示'",
+      "   @change='changeHandel' />"
+    ],
+    "description": "cmp-single-selection 单选"
+  },
+
+  "mu-editor": {
+    "prefix": "mu-editor",
+    "body": [
+      "<mu-editor",
+      "   placeholder='搜索'",
+      "   icon='search'",
+      "   :value=''",
+      "   @change='changeHandel' />"
+    ],
+    "description": "mu-editor 搜索框"
+  },
+
+  "mu-splitter": {
+    "prefix": "mu-splitter",
+    "body": [
+      "<mu-splitter",
+      "   :draggable='false' />",
+    ],
+    "description": "mu-splitter 左右可滑动分割线"
+  },
+
+  "mu-btn-group": {
+    "prefix": "mu-btn-group",
+    "body": [
+      "<mu-button-group>",
+      "   <mu-button",
+      "      button-style='outline'",
+      "      button-type='normal'",
+      "      :disabled='true'",
+      "      @click='btnHandel'>",
+      "      全部折叠",
+      "   </mu-button>",
+      "   <mu-button",
+      "      button-style='outline'",
+      "      button-type='normal'",
+      "      :disabled='true'",
+      "      @click='btnHandel'>",
+      "      全部展开",
+      "   </mu-button>",
+      "</mu-button-group>"
+    ],
+    "description": "mu-btn-group"
+  },
+
+  "mu-list-divider": {
+    "prefix": "mu-list-divider",
+    "body": [
+      "<mu-list-divider",
+      "   style='margin: 0;' />"
+    ],
+    "description": "mu-list-divider 换行显示"
+  },
+  "mu-combo-box-simpleness": {
+    "prefix": "mu-combo-box-simpleness",
+    "body": [
+      "<mu-combo-box",
+      "   v-model=''",
+      "   :options='[1,2,3]'",
+      "   :clearable='false'",
+      "   @change='changeHandel' />"
+    ],
+    "description": "mu-combo-box 简单下拉选择"
+  },
+
+  "mu-combo-box-multifunction": {
+    "prefix": "mu-combo-box-multifunction",
+    "body": [
+      "<mu-combo-box",
+      "   v-model=''",
+      "   editable",
+      "   placeholder='搜索'",
+      "   @change='changeHandel'>",
+      "    <mu-option",
+      "     v-for='n in options'",
+      "     :key='n'",
+      "     :value='n'",
+      "     @click='clickHandel' />",
+      "</mu-combo-box>"
+    ],
+    "description": "mu-combo-box 多功能下拉选择"
+  },
+
+  "notify-success": {
+    "prefix": "notify-success",
+    "body": [
+      "notify('success','成功')"
+    ],
+    "description": "notify-success 成功提示"
+  },
+
+  "notify-error": {
+    "prefix": "notify-error",
+    "body": [
+      "notify('error','失败')"
+    ],
+    "description": "notify-error 失败提示"
+  },
+
+  "mu-dialog": {
+    "prefix": "mu-dialog",
+    "body": [
+      "<mu-dialog",
+      "   width='848px'",
+      "   height='560px'",
+      "   mask-action='none'",
+      "   title='弹框标题'",
+      "   :visible='true'",
+      "   :buttons='[{ key: 'close', caption: '取消', buttonType: 'normal' },{ key: 'ok', caption: '确定', buttonType: 'primary' }]'",
+      "   @show='showHandel'",
+      "   @hide='hideHandel'",
+      "   @change='changeHandel'",
+      "   @buttonclick='clickHandel'>",
+      "</mu-dialog>"
+    ],
+    "description": "mu-dialog 弹框"
+  },
+
+  "cmp-empty-panel": {
+    "prefix": "cmp-empty-panel",
+    "body": [
+      "<mu-v-box v-show='isEmpty' size='1'>",
+      "   <cmp-empty-panel style='height: 100%;' class='flex-box'",
+      "       justify-content='center' action='' handle-action='请重新操作' tip-text='很抱歉' />",
+      "</mu-v-box>"
+    ],
+    "description": "cmp-empty-panel 空数据提示"
+  },
+
   "mu-bar-title": {
     "prefix": "mu-bar-title",
     "body": [
@@ -199,7 +415,7 @@
       "   border-bottom >",
       "        ",
       "    标题$1",
-      "</mu-bar>",
+      "</mu-bar>"
     ],
     "description": "mu标题栏"
   },
@@ -218,7 +434,7 @@
       "    placeholder='搜索'",
       "    icon='search'",
       "    @change='searchValueChange' />",
-      "</mu-bar>",
+      "</mu-bar>"
     ],
     "description": "mu标题+搜索框"
   },
@@ -236,7 +452,7 @@
       "      icon-class='ipm-iconexport'",
       "      caption='导出excel'",
       "      @click='exportExcel' />",
-      "</mu-bar>",
+      "</mu-bar>"
     ],
     "description": "mu标题+导出按钮"
   },
@@ -256,7 +472,7 @@
       "    :editable='true'",
       "    placeholder='筛选'",
       "    @change='change' />",
-      "</mu-bar>",
+      "</mu-bar>"
     ],
     "description": "mu标题+下拉选择"
   },
@@ -282,7 +498,7 @@
       "    :editable='true'",
       "    placeholder='筛选2'",
       "    @change='change' />",
-      "</mu-bar>",
+      "</mu-bar>"
     ],
     "description": "mu标题+下拉选择2个"
   },
@@ -326,7 +542,7 @@
       "      }",
       "    </style>",
       "-->",
-      "</mu-bar>",
+      "</mu-bar>"
     ],
     "description": "mu下拉选择+单选框"
   },
@@ -351,7 +567,7 @@
       "    placeholder='搜索'",
       "    icon='search'",
       "    @change='searchValueChange' />",
-      "</mu-bar>",
+      "</mu-bar>"
     ],
     "description": "mu标题+下拉选择+搜索"
   },
@@ -392,7 +608,7 @@
       "      </mu-list-item>",
       "    </template>",
       "  </mu-dropdown>",
-      "</mu-bar>",
+      "</mu-bar>"
     ],
     "description": "mu标题+导出+更多按钮"
   }

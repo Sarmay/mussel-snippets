@@ -2,7 +2,7 @@
     "name": "mussel",
     "displayName": "mussel",
     "description": "mussel提示插件",
-    "version": "0.0.1",
+    "version": "0.0.5",
     "keywords": ["mctech", "mussel", "mussel-ui"],
     "engines": {
       "vscode": "^1.0.0"

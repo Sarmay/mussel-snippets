@@ -10,6 +10,24 @@
 ### 标签
 |命令|内容|
 |---|---|
+|mu-v-box|mu-v-box|
+|mu-h-box|mu-h-box|
+|mu-space|mu-space：空间|
+|mu-btn-group|mu-btn-group：线性按钮组|
+|mu-btn-primary|mu-btn-primary：实体按钮|
+|mu-btn-danger|mu-btn-danger：删除按钮|
+|mu-btn-outline|mu-btn-outline：线性按钮|
+|cmp-single-selection|cmp-single-selection：单选|
+|mu-editor|mu-editor：输入框|
+|mu-splitter|mu-splitter：左右滑动分割线|
+|mu-list-divider|mu-list-divider：换行显示|
+|mu-combo-box-simpleness|mu-combo-box-simpleness：下拉选择模糊+模糊搜索|
+|mu-combo-box-multifunction|mu-combo-box-multifunction：下拉选择精准搜索+模糊搜索|
+|notify-success|notify-success：成功提示|
+|notify-error|notify-error：失败提示|
+|mu-dialog|mu-dialog：弹框|
+|cmp-empty-panel|cmp-empty-panel：空白页提示|
+|mu-bar|mu-bar|
 |mu-bar-title|mu-bar：标题|
 |mu-bar-title-search|mu-bar：带标+搜索框|
 |mu-bar-title-export|mu-bar：带标+导出按钮|

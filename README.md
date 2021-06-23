@@ -1,5 +1,8 @@
 # mussel提示插件使用方法
 
+## https://cheap-pets.github.io/mussel
+## https://github.com/cheap-pets/mussel.git
+
 ### 布局
 
 |命令|内容|
